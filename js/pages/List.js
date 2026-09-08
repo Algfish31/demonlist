@@ -84,13 +84,8 @@ export default {
                     </template>
                     <h3>Notes and info.</h3>
                     <p>
-                        This is NOT the pipislist, please give submissions for your levels at https://pipis-list.vercel.app/#/ This is just for me to put my personal completions in
-                    </p>
-                    <p>
-                        Some demon levels ive beaten (poltergeist) I dont have video recordings for so I just use a showcase.
-                    </p>
-                    <p>
-                        The niche memes are mainstream.
+                        This is Algfish's personal demonlist which will list the top demons I have completed.<br>
+                        The majority of levels will not have a completion video, so a showcase video will be used instead.
                     </p>
                 </div>
             </div>
