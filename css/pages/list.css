@@ -5,7 +5,10 @@
 }
 .page-list {
     position: relative;
+    isolation: isolate;
+    overflow: hidden;
 }
+
 
 .selected-background {
     position: fixed;
