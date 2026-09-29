@@ -71,6 +71,21 @@ header .logo {
 header .nav {
     flex: 1;
 }
+.level {
+    position: relative;
+    height: 64px;
+    margin: 10px 8px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
 .level-container {
     overflow: visible;
 }
