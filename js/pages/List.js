@@ -25,10 +25,13 @@ export default {
         <main v-else class="page-list">
 <div
     class="selected-background"
-    :style="level ? {
-        backgroundImage:
-            'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
-    } : {}"
+:style="level ? {
+    backgroundImage:
+        'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + '), url(/dog.png)'
+} : {
+    backgroundImage: 'url(/dog.png)'
+}"
+
 ></div>
 
 <div class="selected-background-overlay"></div>
