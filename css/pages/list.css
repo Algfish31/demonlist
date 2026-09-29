@@ -23,7 +23,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 
-    filter: blur(14px);
+    filter: blur(15px);
     background: rgba(0, 0, 0, 0.55);
     
     transform: scale(1.1);
