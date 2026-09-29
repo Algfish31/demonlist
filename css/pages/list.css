@@ -3,6 +3,7 @@
 .page-list .meta-container {
     padding-block: 2rem;
 }
+
 .page-list .list-container {
     padding-inline: 1rem;
 }
@@ -223,6 +224,10 @@
 }
 .list .level.error {
     border-color: #de0000;
+}
+.list .level {
+    background-size: cover;
+    background-position: center;
 }
 .list p {
     margin: 0;
