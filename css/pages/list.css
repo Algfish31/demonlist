@@ -42,6 +42,7 @@
     color: var(--color-on-primary);
     filter: brightness(1.25);
     transform: scale(1.005);
+    border: 1px solid #FFBF00;
 }
 .page-list .list .level.active button {
     background-color: transparent;
