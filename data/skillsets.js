@@ -4,6 +4,7 @@ export default {
     Cube: "Levels with alot of the difficulty in the cube sections.",
     Spider: "Levels that SOMEHOW have alot of the difficulty in the spider sections.",
     Unbalanced: "The difficulty in this level is NOT consistent.",
+    "Frame Perfects": "Levels with clicks that require less then 17ms of error to pull off.",
     Duals: "The worst gamemode.",
     Memory: "The worst gameplay.",
     "Take a WILD guess": "Its wave.",
