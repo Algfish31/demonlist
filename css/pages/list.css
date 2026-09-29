@@ -176,13 +176,15 @@
 }
 .list .level::before {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, 0.62);
-
     pointer-events: none;
+    transition: background 0.2s ease;
+}
+
+.list .level:hover::before {
+    background: rgba(0, 0, 0, 0.25);
 }
 .list .level button {
     position: relative;
