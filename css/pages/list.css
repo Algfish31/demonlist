@@ -40,10 +40,14 @@
 .page-list .list .level button:hover {
         background-color: transparent;
     color: var(--color-on-primary);
+    filter: brightness(1.25);
+        transform: scale(1.005);
 }
 .page-list .list .level.active button {
     background-color: transparent;
     color: var(--color-on-primary);
+    filter: brightness(1.25);
+        transform: scale(1.005);
 }
 .page-list .level-container .level {
     display: flex;
@@ -215,15 +219,6 @@
     font-weight: 700;
 
     color: white;
-}
-.list .level:hover {
-    filter: brightness(1.25);
-    transform: scale(1.005);
-}
-
-.list .level.active {
-    filter: brightness(1.25);
-    transform: scale(1.005);
 }
 .list .level.error {
     border-color: #de0000;
