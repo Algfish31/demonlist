@@ -8,6 +8,10 @@
     isolation: isolate;
     overflow: hidden;
 }
+header {
+    position: relative;
+    z-index: 100;
+}
 
 .selected-background {
     position: fixed;
