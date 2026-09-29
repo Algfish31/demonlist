@@ -22,10 +22,10 @@
     width: 100%;
 }
 .page-list .list .level button {
-        border-color: rgba(255, 255, 255, 0.2);
     background-color: transparent;
     color: var(--color-on-background);
     border: none;
+        filter: brightness(1.10);
     padding: 1rem;
     text-align: start;
     word-break: normal;
@@ -217,12 +217,13 @@
     color: white;
 }
 .list .level:hover {
-    filter: brightness(1.15);
+    filter: brightness(1.25);
     transform: scale(1.005);
 }
 
 .list .level.active {
-    border-color: rgba(255, 255, 255, 0.30);
+    filter: brightness(1.25);
+    transform: scale(1.005);
 }
 .list .level.error {
     border-color: #de0000;
