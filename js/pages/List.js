@@ -24,13 +24,29 @@ export default {
             <div class="list-container">
                 <table class="list" v-if="list">
                   <tr v-for="([level, err], i) in list">
-    <td
-        class="level"
-        :class="{ 'active': selected == i, 'error': !level }"
-:style="level?.image ? {
-  backgroundImage: `url('https://levelthumbs.prevter.me/thumbnail/${level.id}')`
-} : {}"
-    >
+<td
+    class="level"
+    :class="{ 'active': selected == i, 'error': !level }"
+    :style="level ? {
+        backgroundImage: `url('https://levelthumbs.prevter.me/thumbnail/${level.id}')`
+    } : {}"
+>
+    <button @click="selected = i">
+        <span class="rank">
+            <template v-if="i + 1 <= 150">
+                #{{ i + 1 }}
+            </template>
+            <template v-else>
+                Legacy
+            </template>
+        </span>
+
+        <span class="level-name">
+            {{ level?.name || 'Error (' + err + '.json)' }}
+        </span>
+    </button>
+</td>
+
         <button @click="selected = i">
 
             <span class="rank">
