@@ -27,9 +27,10 @@ export default {
 <td
     class="level"
     :class="{ 'active': selected == i, 'error': !level }"
-    :style="level ? {
-        backgroundImage: `url('https://levelthumbs.prevter.me/thumbnail/${level.id}')`
-    } : {}"
+:style="level ? {
+    backgroundImage: 'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
+} : {}"
+
 >
     <button @click="selected = i">
         <span class="rank">
