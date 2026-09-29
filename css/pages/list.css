@@ -155,13 +155,13 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
     pointer-events: none;
     transition: background 0.2s ease;
 }
 
 .list .level:hover::before {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1);
 }
 .list .level button {
     position: relative;
