@@ -3,6 +3,39 @@
 .page-list .meta-container {
     padding-block: 2rem;
 }
+.page-list {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.selected-background {
+    position: fixed;
+    z-index: -2;
+
+    inset: -50px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(30px);
+
+    transform: scale(1.1);
+
+    transition: background-image 0.3s ease;
+}
+
+.selected-background-overlay {
+    position: fixed;
+    z-index: -1;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    pointer-events: none;
+}
 
 .page-list .list-container {
     padding-inline: 1rem;
