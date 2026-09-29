@@ -24,8 +24,6 @@ header {
     background-repeat: no-repeat;
 
     filter: blur(15px);
-    background: rgba(0, 0, 0, 0.55);
-    
     transform: scale(1.1);
 
     transition: background-image 0.3s ease;
@@ -37,7 +35,7 @@ header {
 
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.65);
 
     pointer-events: none;
 }
