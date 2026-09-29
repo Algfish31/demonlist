@@ -1,12 +1,16 @@
 :root {
     color-scheme: dark;
-    --color-background: #1c1b1f;
+
+    --color-background: #08070b;
     --color-on-background: white;
-    --color-background-hover: #27262c;
+
+    --color-background-hover: #17151c;
     --color-on-background-hover: white;
+
     --color-primary: #254211;
     --color-primary-disabled: #1f213c;
     --color-on-primary: white;
+
     --color-error: #de0000;
     --color-on-error: white;
 }
@@ -14,13 +18,17 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: #1c1b1f;
+
+    --color-background: #08070b;
     --color-on-background: white;
-    --color-background-hover: #27262c;
+
+    --color-background-hover: #17151c;
     --color-on-background-hover: white;
+
     --color-primary: #254211;
     --color-primary-disabled: #1f213c;
     --color-on-primary: white;
+
     --color-error: #de0000;
     --color-on-error: white;
 }
@@ -50,8 +58,10 @@ main {
 
 header {
     display: flex;
-    padding-inline: calc(25vw - 10rem);
+    align-items: center;
+    padding-inline: 1rem;
     height: 4rem;
+
     background-color: var(--color-primary);
     color: var(--color-on-primary);
 }
@@ -71,22 +81,8 @@ header .logo {
 header .nav {
     flex: 1;
 }
-.level {
-    position: relative;
-    height: 64px;
-    margin: 10px 8px;
-    border-radius: 12px;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-
-    background-size: cover;
-    background-position: center;
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
 .level-container {
+    width: 100%;
     overflow: visible;
 }
 main {
@@ -98,6 +94,7 @@ main {
 }
 main > div {
     overflow-y: auto;
+    height: 100%;
 }
 
 .spinner {
