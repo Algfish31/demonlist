@@ -22,6 +22,7 @@
     width: 100%;
 }
 .page-list .list .level button {
+        border-color: rgba(255, 255, 255, 0.2);
     background-color: transparent;
     color: var(--color-on-background);
     border: none;
@@ -222,7 +223,7 @@
 }
 
 .list .level.active {
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.30);
 }
 .list .level.error {
     border-color: #de0000;
