@@ -5,13 +5,11 @@
 }
 .page-list {
     position: relative;
-    isolation: isolate;
-    overflow: hidden;
 }
 
 .selected-background {
     position: fixed;
-    z-index: -2;
+    z-index: -1;
 
     inset: -50px;
 
@@ -28,7 +26,7 @@
 
 .selected-background-overlay {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
 
     inset: 0;
 
