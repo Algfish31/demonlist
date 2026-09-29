@@ -112,6 +112,7 @@ main > div {
 }
 
 .skill {
+        font-family: "Lexend Deca", sans-serif;
     z-index: 10000;
     position: relative;
     display: inline-block;
@@ -123,6 +124,7 @@ main > div {
 }
 
 .skill-tooltip {
+        font-family: "Lexend Deca", sans-serif;
     position: absolute;
     z-index: 100;
     bottom: calc(100% + 8px);
