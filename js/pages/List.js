@@ -28,7 +28,7 @@ export default {
         class="level"
         :class="{ 'active': selected == i, 'error': !level }"
 :style="level?.image ? {
-backgroundImage: 'url(' + level.image + ')'
+  backgroundImage: `url('https://levelthumbs.prevter.me/thumbnail/${level.id}')`
 } : {}"
     >
         <button @click="selected = i">
