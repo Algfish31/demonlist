@@ -41,10 +41,10 @@ backgroundImage: 'url(' + level.image + ')'
                     Legacy
                 </template>
             </span>
+<span class="level-name">
+    {{ level?.name || 'Error (' + err + '.json)' }}
+</span>
 
-            <span class="level-name">
-                {{ level?.name || `Error (${err}.json)` }}
-            </span>
 
         </button>
     </td>
