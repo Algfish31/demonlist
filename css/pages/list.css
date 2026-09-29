@@ -140,8 +140,9 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 8px 10px;
-    padding: 0;
+    table-layout: fixed;
 }
+
 .list tr {
     height: 64px;
 }
