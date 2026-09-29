@@ -18,20 +18,6 @@
     text-align: end;
     padding-right: 1rem;
 }
-.page-list .list .level {
-    width: auto;
-}
-.page-list .list .level button {
-    background-color: transparent;
-    color: var(--color-on-background);
-    border: none;
-        filter: brightness(1.10);
-    padding: 1rem;
-    text-align: start;
-    word-break: normal;
-    overflow-wrap: anywhere;
-    cursor: pointer;
-}
 .page-list .list .level.error button {
     color: var(--color-error);
     cursor: not-allowed;
