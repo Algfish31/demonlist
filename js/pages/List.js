@@ -23,8 +23,15 @@ export default {
         </main>
 
         <main v-else class="page-list">
+<div
+    class="selected-background"
+    :style="level ? {
+        backgroundImage:
+            'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
+    } : {}"
+></div>
 
-            <!-- LEVEL LIST -->
+<div class="selected-background-overlay"></div>
             <div class="list-container">
 <table class="list" v-if="list">
     <tr
