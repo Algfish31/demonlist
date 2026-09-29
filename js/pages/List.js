@@ -26,44 +26,43 @@ export default {
 
             <!-- LEVEL LIST -->
             <div class="list-container">
-                <table class="list" v-if="list">
-                    <tr
-                        v-for="([level, err], i) in list"
-                        :key="i"
-                    >
-                        <!-- Rank -->
-                        <td class="rank">
-                            <p>
-                                <template v-if="i + 1 <= 150">
-                                    #{{ i + 1 }}
-                                </template>
+<table class="list" v-if="list">
+    <tr
+        v-for="([level, err], i) in list"
+        :key="i"
+    >
+        <td
+            class="level"
+            :class="{
+                active: selected === i,
+                error: !level
+            }"
+            :style="level ? {
+                backgroundImage:
+                    'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
+            } : {}"
+        >
+            <button @click="selected = i">
 
-                                <template v-else>
-                                    Legacy
-                                </template>
-                            </p>
-                        </td>
+                <span class="rank">
+                    <template v-if="i + 1 <= 150">
+                        #{{ i + 1 }}
+                    </template>
 
-                        <!-- Level -->
-                        <td
-                            class="level"
-                            :class="{
-                                active: selected === i,
-                                error: !level
-                            }"
-                            :style="level ? {
-                                backgroundImage:
-                                    'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
-                            } : {}"
-                        >
-                            <button @click="selected = i">
-                                <span class="level-name">
-                                    {{ level?.name || 'Error (' + err + '.json)' }}
-                                </span>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
+                    <template v-else>
+                        Legacy
+                    </template>
+                </span>
+
+                <span class="level-name">
+                    {{ level?.name || 'Error (' + err + '.json)' }}
+                </span>
+
+            </button>
+        </td>
+    </tr>
+</table>
+
             </div>
 
             <!-- LEVEL DETAILS -->
