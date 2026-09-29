@@ -9,10 +9,9 @@
     overflow: hidden;
 }
 
-
 .selected-background {
     position: fixed;
-    z-index: 0;
+    z-index: -2;
 
     inset: -50px;
 
@@ -22,6 +21,7 @@
 
     filter: blur(20px);
 
+    
     transform: scale(1.1);
 
     transition: background-image 0.3s ease;
