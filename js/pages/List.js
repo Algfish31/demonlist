@@ -27,9 +27,9 @@ export default {
     <td
         class="level"
         :class="{ 'active': selected == i, 'error': !level }"
-        :style="level?.image ? {
-            backgroundImage: `url('${level.image}')`
-        } : {}"
+:style="level?.image ? {
+    backgroundImage: 'url(' + level.image + ')'
+} : {}"
     >
         <button @click="selected = i">
 
