@@ -164,13 +164,16 @@
 .list .level {
     position: relative;
     padding: 0;
-    border: 1px solid #FFBF00;
+    border: 1px solid transparent;
     border-radius: 12px;
     overflow: hidden;
     background: #120f18;
     transition:
         transform 0.15s ease,
         filter 0.15s ease;
+}
+.list .level:hover::after {
+    border-color: #FFBF00;
 }
 .list .level::before {
     content: "";
