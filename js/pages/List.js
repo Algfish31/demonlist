@@ -23,17 +23,32 @@ export default {
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list">
-                        <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
-                        </td>
-                        <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <button @click="selected = i">
-                                <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </button>
-                        </td>
-                    </tr>
+                  <tr v-for="([level, err], i) in list">
+    <td
+        class="level"
+        :class="{ 'active': selected == i, 'error': !level }"
+        :style="level?.image ? {
+            backgroundImage: `url('${level.image}')`
+        } : {}"
+    >
+        <button @click="selected = i">
+
+            <span class="rank">
+                <template v-if="i + 1 <= 150">
+                    #{{ i + 1 }}
+                </template>
+                <template v-else>
+                    Legacy
+                </template>
+            </span>
+
+            <span class="level-name">
+                {{ level?.name || `Error (${err}.json)` }}
+            </span>
+
+        </button>
+    </td>
+</tr>
                 </table>
             </div>
             <div class="level-container">
