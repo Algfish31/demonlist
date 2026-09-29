@@ -47,10 +47,12 @@ export default {
                 active: selected === i,
                 error: !level
             }"
-            :style="level ? {
-                backgroundImage:
-                    'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + ')'
-            } : {}"
+:style="level ? {
+    backgroundImage:
+        'url(https://levelthumbs.prevter.me/thumbnail/' + level.id + '), url(/dog.png)'
+} : {
+    backgroundImage: 'url(/dog.png)'
+}"
         >
             <button @click="selected = i">
 
